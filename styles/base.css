@@ -62,6 +62,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
+    color: white;
 
 }
 
