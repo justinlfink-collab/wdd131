@@ -1,0 +1,70 @@
+/* simple reset like the CodePen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* page layout = GRID (taught) */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: #444;
+    color: #fff;
+}
+
+.header-content {
+    padding: 1rem;
+}
+
+/* NAV = FLEX (taught, like the CodePen) */
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background: #000;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+/* MAIN AREA */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-content {
+    background: #ccc;
+    padding: 1rem;
+    min-height: 250px;
+}
+
+.aside-content {
+    background: #eee;
+    padding: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
