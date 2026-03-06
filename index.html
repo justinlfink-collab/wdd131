@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Justin Fink | Course landing page with personal information and web development resources.">
+    <meta name="author" content="Justin Fink">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Justin Fink</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
+
 <body>
-    
+
+    <header>
+
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/justinlfink/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/11?id=p12-p14&lang=eng#p12"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Justin Fink</h1>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <p>
+                    My name is Justin Fink. I live in Salem, Utah and enjoy learning new
+                    technology, building projects, and spending time with my family.
+                    I enjoy solving problems, working on home improvement projects,
+                    and continuing to grow my web development skills.
+                </p>
+
+                <img src="images/justin_fink.jpeg" alt="Portrait of Justin Fink">
+
+            </div>
+
+            <h3>Salem, Utah</h3>
+
+            <div class="location-content">
+
+                <figure>
+                    <img src="images/utah_state_flag.webp" alt="Official flag of Utah">
+                    <figcaption>Official Flag of Utah</figcaption>
+                </figure>
+
+                <p>
+                    Utah is known for its mountains, deserts, and beautiful national parks.
+                    Salem is located in Utah County and is part of a growing community with
+                    strong family values and many outdoor recreation opportunities.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+                <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span> Justin Fink | Utah
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
+
 </html>
