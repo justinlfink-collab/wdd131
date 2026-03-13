@@ -15,11 +15,6 @@
     box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-}
 
 body {
     font-family: var(--body-font);
@@ -70,6 +65,8 @@ header h1 {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
     background-color: var(--primary-color);
 }
 
