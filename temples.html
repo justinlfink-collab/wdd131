@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album page for WDD 131 by Justin Fink.">
+    <meta name="author" content="Justin Fink">
+
+    <title>Temple Album | Justin Fink | WDD 131</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temple Album</h1>
+            <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+
+        <section class="gallery">
+            <figure>
+                <img src="images/san-diego-temple.jpg" alt="San Diego California Temple" loading="lazy" width="400"
+                    height="250">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="250">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome-temple.jpg" alt="Rome Italy Temple" loading="lazy" width="400" height="250">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/paris-temple.jpg" alt="Paris France Temple" loading="lazy" width="400" height="250">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/tokyo-temple.jpg" alt="Tokyo Japan Temple" loading="lazy" width="400" height="250">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/phoenix-temple.jpg" alt="Phoenix Arizona Temple" loading="lazy" width="400"
+                    height="250">
+                <figcaption>Phoenix Arizona Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/provo-temple.jpg" alt="Provo Temple" loading="lazy" width="400" height="250">
+                <figcaption>Provo Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/bountiful-temple.jpg" alt="Bountiful Temple" loading="lazy" width="400" height="250">
+                <figcaption>Bountiful Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/oakland-temple.jpg" alt="Oakland Temple" loading="lazy" width="400" height="250">
+                <figcaption>Oakland Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Justin Fink | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
