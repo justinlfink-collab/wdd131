@@ -4,7 +4,8 @@
     --accent-color: #c8b68c;
     --heading-color: #132a23;
     --text-color: #222222;
-    --card-bg: rgba(255, 255, 255, 0.88);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --white-color: #ffffff;
     --shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
     --max-width: 1200px;
     --font-heading: "Merriweather", serif;
@@ -30,7 +31,7 @@ img {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     text-align: center;
     padding: 1.5rem 1rem;
     border-bottom: 8px solid var(--accent-color);
@@ -65,7 +66,7 @@ main {
 .story {
     background-color: var(--card-bg);
     margin: 1rem;
-    padding: 1.25rem;
+    padding: 1.5rem;
     border-radius: 14px;
     box-shadow: var(--shadow);
 }
@@ -81,7 +82,7 @@ main {
 }
 
 .card-content p {
-    margin: 0.55rem 0;
+    margin: 0.4rem 0;
     text-align: center;
 }
 
@@ -96,12 +97,12 @@ main {
 }
 
 .weather-icon-mobile img {
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
 .story {
-    padding: 1.75rem;
+    padding: 2rem;
 }
 
 .story p {
@@ -110,7 +111,7 @@ main {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
@@ -120,7 +121,6 @@ footer p {
     margin: 0.35rem 0;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
     header h1 {
         font-size: 2.5rem;
@@ -145,14 +145,14 @@ footer p {
     .info-grid {
         display: grid;
         grid-template-columns: 1fr 1.4fr;
-        gap: 0.5rem;
+        gap: 1rem;
         align-items: start;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
     .data-card,
     .story {
-        margin: 1rem;
+        margin: 0 1rem;
     }
 
     .card h2,
@@ -165,6 +165,6 @@ footer p {
     }
 
     .story {
-        padding: 2rem;
+        padding: 2.25rem;
     }
 }
