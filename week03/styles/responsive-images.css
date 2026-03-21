@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #1f3a5f;
+    --accent-color: #d9e6f2;
+    --text-color: #222;
+    --background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    margin: 0.5rem 0;
+}
+
+p {
+    line-height: 1.6;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Fink | WDD 131 | Responsive Images</title>
+    <meta name="description" content="WDD 131 responsive images activity using the picture element and srcset.">
+    <meta name="author" content="Justin Fink">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Temple exterior with mountains and sky in the background"
+                    width="1500" height="750">
+            </picture>
+        </div>
+
+        <section>
+            <h2>Week 03 Learning Activity</h2>
+            <p>
+                This page demonstrates responsive images using the picture element,
+                srcset, and media queries.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Justin Fink</p>
+    </footer>
+</body>
+
+</html>
