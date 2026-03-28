@@ -1,0 +1,153 @@
+:root {
+    --primary: #3f0d6b;
+    --secondary: #ffffff;
+    --accent: #eadcff;
+    --text: #222;
+    --bg: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* NAV */
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.navigation a:hover {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+/* MAIN */
+main {
+    padding: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* CARD */
+.temple-card {
+    background: #e9e9e9;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.temple-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.temple-card p {
+    margin: .25rem 0;
+}
+
+.label {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.temple-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

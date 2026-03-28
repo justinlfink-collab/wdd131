@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Fink | WDD 131 | Lazy Loading</title>
+    <meta name="description" content="WDD 131 lazy loading images activity">
+    <meta name="author" content="Justin Fink">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Lazy Loading Images</h1>
+
+        <!-- LOCAL IMAGE -->
+        <img src="images/justin_portrait.webp" alt="Portrait of Justin Fink" width="400" height="600" loading="lazy">
+
+        <!-- OTHER IMAGES -->
+        <img src="https://picsum.photos/400/600?random=1" alt="Mountain lake" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=2" alt="Canyon landscape" width="400" height="600"
+            loading="lazy">
+        <img src="https://picsum.photos/400/600?random=3" alt="Waterfall scene" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=4" alt="Desert cliffs" width="400" height="600" loading="lazy">
+        <img src="https://picsum.photos/400/600?random=5" alt="Snowy mountains" width="400" height="600" loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Justin Fink | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
