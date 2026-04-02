@@ -1,0 +1,103 @@
+
+
+.color-grid {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.color-item {
+
+    text-align: center;
+    width: 150px;
+
+}
+
+.color-box {
+
+    height: 80px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+
+}
+
+
+
+.forest {
+    background-color: #2C6E49;
+}
+
+.light {
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+}
+
+.sage {
+    background-color: #4C956C;
+}
+
+
+.font-sample {
+
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+}
+
+.heading-font {
+
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.body-font {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.wireframe-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.wireframe-item {
+    margin: 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.wireframe-item h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.wireframe-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.wireframe-item:first-child img {
+    max-width: 1000px;
+}
+
+.wireframe-item:last-child img {
+    max-width: 420px;
+}
+
+.wireframe-item figcaption {
+    font-size: 0.95rem;
+}
