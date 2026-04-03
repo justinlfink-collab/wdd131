@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review submission confirmation page for WDD 131 Week 05.">
+    <meta name="author" content="Justin Fink">
+    <title>Review Submitted | Justin Fink | WDD 131</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer>
+        function setFooterData() {
+            const year = document.querySelector("#currentyear");
+            const lastModified = document.querySelector("#lastModified");
+
+            year.textContent = new Date().getFullYear();
+            lastModified.textContent = `Last Modified: ${document.lastModified}`;
+        }
+
+        function updateReviewCount() {
+            let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+
+            document.querySelector("#reviewCount").textContent = reviewCount;
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            updateReviewCount();
+            setFooterData();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+        <section class="review-summary">
+            <h2>Thank you for your review!</h2>
+            <p>Your product review has been submitted successfully.</p>
+            <p><strong>Total reviews completed:</strong> <span id="reviewCount">0</span></p>
+            <p><a href="form.html">Submit another review</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Justin Fink | Utah
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

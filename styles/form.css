@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #1f3c58;
+    --primary-dark: #162b40;
+    --accent-color: #d9a441;
+    --background-color: #f4f6f8;
+    --card-color: #ffffff;
+    --field-color: #f8fafc;
+    --text-color: #1f2933;
+    --muted-text: #52606d;
+    --border-color: #cbd2d9;
+    --focus-color: #2d6cdf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+}
+.header-subtitle {
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: #e6edf3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+
+.review-form,
+.review-summary {
+    background-color: var(--card-color);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.required-note {
+    font-size: .9rem;
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+}
+label,
+legend {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-dark);
+}
+
+label span,
+legend span {
+    color: var(--muted-text);
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--field-color);
+    color: var(--text-color);
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+select:focus,
+input[type="date"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: 3px solid rgba(45, 108, 223, 0.2);
+    outline-offset: 2px;
+    border-color: var(--focus-color);
+}
+
+.rating-group legend {
+    margin-bottom: 0.75rem;
+}
+
+.rating-options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+}
+
+.rating-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--field-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.75rem 0.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    min-height: 90px;
+}
+
+.stars {
+    color: var(--accent-color);
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 1px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.rating-label input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.95rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-dark);
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.review-summary h2 {
+    margin-top: 0;
+    color: var(--primary-dark);
+}
+
+.review-summary p {
+    margin: 0.75rem 0;
+}
+
+.review-summary a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.review-summary a:hover {
+    color: var(--primary-dark);
+}
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .review-form,
+    .review-summary {
+        padding: 1.2rem;
+    }
+
+    .rating-options {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-label {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: auto;
+        padding: 0.85rem 1rem;
+    }
+
+    .stars {
+        margin-bottom: 0;
+    }
+}
