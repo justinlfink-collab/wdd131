@@ -62,12 +62,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.required-note {
-    font-size: .9rem;
-    color: var(--muted-text);
-    margin-bottom: 1rem;
-}
-
 label,
 legend {
     display: block;
