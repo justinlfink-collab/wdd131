@@ -1,0 +1,43 @@
+@media screen and (min-width: 700px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card-container,
+    .location-list {
+        flex-direction: row;
+    }
+
+    .card,
+    .location-card {
+        flex: 1;
+    }
+
+    .scenic-images {
+        flex-direction: row;
+    }
+
+    .scenic-images img {
+        flex: 1;
+    }
+
+    /* HERO OVERLAY FOR LARGE SCREENS */
+
+    .hero {
+        position: relative;
+    }
+
+    .hero-text {
+        position: absolute;
+        left: 50%;
+        bottom: 1rem;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 80%;
+        max-width: 600px;
+    }
+
+}

@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background-color: #2c6e49;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #4c956c;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+section {
+    padding: 1rem;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    background-color: #2c6e49;
+    color: white;
+    padding: 1rem;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+}
+
+/* BUTTON */
+
+.button {
+    background-color: #4c956c;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* CONTENT SECTIONS */
+
+.intro,
+.page-intro {
+    text-align: center;
+}
+
+.categories h2,
+.locations h2 {
+    margin-bottom: 1rem;
+}
+
+/* CARDS */
+
+.card-container,
+.location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card,
+.location-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* SINGLE IMAGE */
+
+.single-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SCENIC IMAGES */
+
+.scenic-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scenic-images img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* LOCATION LIST */
+
+.location-card ul {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+/* FORM */
+
+.form-section {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2c6e49;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c956c;
+}
+
+#submissionCount {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #2c6e49;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Planner | Salem Outdoors</title>
+
+    <meta name="description" content="Plan an outdoor trip near Salem Utah using the Salem Outdoors trip planner form.">
+    <meta name="author" content="Justin Fink">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/trip-planner.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Salem Outdoors</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hiking.html">Hiking</a></li>
+                <li><a href="camping.html">Camping</a></li>
+                <li><a href="scenic.html">Scenic Spots</a></li>
+                <li><a href="trip-planner.html">Trip Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h2>Trip Planner</h2>
+            <p>Use this form to plan your next outdoor adventure near Salem Utah.</p>
+        </section>
+
+        <section class="form-section">
+            <form id="tripForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="activity">Adventure Type *</label>
+                    <select id="activity" name="activity" required>
+                        <option value="">Select an option</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="camping">Camping</option>
+                        <option value="scenic">Scenic Spots</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="difficulty">Preferred Difficulty</label>
+                    <select id="difficulty" name="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="challenging">Challenging</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="group-size">Group Size</label>
+                    <input type="number" id="group-size" name="group-size" min="1" max="20">
+                </div>
+
+                <div class="form-group">
+                    <label for="trip-date">Trip Date *</label>
+                    <input type="date" id="trip-date" name="trip-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Trip Notes</label>
+                    <textarea id="notes" name="notes" rows="5"></textarea>
+                </div>
+
+                <button type="submit">Submit Trip Plan</button>
+            </form>
+
+            <p id="submissionCount"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> | Justin Fink | Salem Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

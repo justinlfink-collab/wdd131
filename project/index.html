@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Salem Outdoors</title>
+
+    <meta name="description"
+        content="Outdoor adventures near Salem Utah including hiking, camping, and scenic destinations.">
+    <meta name="author" content="Justin Fink">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Salem Outdoors</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hiking.html">Hiking</a></li>
+                <li><a href="camping.html">Camping</a></li>
+                <li><a href="scenic.html">Scenic Spots</a></li>
+                <li><a href="trip-planner.html">Trip Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+                <source srcset="images/hero-image-large.webp" media="(min-width:900px)">
+                <source srcset="images/hero-image-medium.webp" media="(min-width:500px)">
+                <img src="images/hero-image-small.webp" alt="Utah mountains near Salem" width="1500" height="750">
+            </picture>
+
+            <div class="hero-text">
+                <h2>Explore Outdoor Adventures Near Salem Utah</h2>
+                <p>Discover hiking trails, scenic overlooks, and camping destinations.</p>
+                <a class="button" href="trip-planner.html">Plan Your Trip</a>
+            </div>
+
+        </section>
+
+
+        <section class="intro">
+
+            <h2>Welcome to Salem Outdoors</h2>
+
+            <p>
+                This site highlights outdoor recreation opportunities near Salem Utah. From mountain trails to scenic
+                overlooks and peaceful camping spots, there are countless ways to explore the outdoors.
+            </p>
+
+        </section>
+
+
+        <section class="categories">
+
+            <h2>Adventure Categories</h2>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <img src="images/hiking-image.webp" alt="Hiking trail in Utah mountains" loading="lazy">
+                    <h3>Hiking</h3>
+                    <p>Explore trails such as Loafer Mountain and Spanish Fork Peak.</p>
+                    <a href="hiking.html">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="images/camping.webp" alt="Camping near mountain lake" loading="lazy">
+                    <h3>Camping</h3>
+                    <p>Find campgrounds like Payson Lakes and Maple Lake.</p>
+                    <a href="camping.html">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="images/maple-canyon.webp" alt="Maple Canyon scenic cliffs" loading="lazy">
+                    <h3>Scenic Spots</h3>
+                    <p>Discover scenic drives and viewpoints across Utah Valley.</p>
+                    <a href="scenic.html">Learn More</a>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>© <span id="year"></span> | Justin Fink | Salem Utah</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
